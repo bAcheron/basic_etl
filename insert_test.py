@@ -8,7 +8,7 @@ current_date = datetime.datetime.today().strftime('%Y%m%d')
 log_name='logs\\'+current_date +'_test_etl.log'
 
 
-test_db = NewDatabaseManager('DESKTOP-QP2G51N\SQLEXPRESS','Examples',log_name)
+test_db = NewDatabaseManager('DatabaseName','Examples',log_name)
 
 file_list = test_db.select_data("""
 		SELECT 
